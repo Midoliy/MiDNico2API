@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>b8cd3540-2287-422e-bb01-da7e4a753992</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MiDNico2API.Contract</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)MiDComment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ByteExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\StringExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MiDOption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MiDThread.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MiDUser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PlayerStatus.cs" />
+  </ItemGroup>
+</Project>

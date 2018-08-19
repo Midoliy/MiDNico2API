@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseUrl>https://github.com/Midoliy/MiDNico2API/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Midoliy/MiDNico2API</PackageProjectUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <Description>ニコニコAPIとの通信用ライブラリです.</Description>
+    <AssemblyVersion>0.1.2.2</AssemblyVersion>
+    <FileVersion>0.1.2.2</FileVersion>
+    <Version>1.2.2</Version>
+    <PackageIconUrl>https://raw.githubusercontent.com/Midoliy/MiDNico2API/master/icon.png</PackageIconUrl>
+    <PackageTags>nico niconico nico2 mid</PackageTags>
+    <Authors>T.Midorikawa</Authors>
+    <Company>T.Midorikawa</Company>
+    <PackageReleaseNotes>1.0.0 : new
+1.1.0 : 通信Socketインスタンスが意図しないタイミングで開放されてしまう問題を修正.
+1.2.0 : APIのインターフェースを統一化. 処理の最適化の実施.
+1.2.1 : コメント投稿用APIのバグを修正.
+1.2.2 : 軽微な修正.</PackageReleaseNotes>
+    <Copyright>T.Midorikawa</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Buffers" Version="4.5.0" />
+    <PackageReference Include="System.Memory" Version="4.5.1" />
+  </ItemGroup>
+
+</Project>

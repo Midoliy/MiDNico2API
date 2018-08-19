@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MiDNico2API.Core" Version="1.2.2" />
+  </ItemGroup>
+
+  <Import Project="..\MiDNico2API.Contract\MiDNico2API.Contract.projitems" Label="Shared" />
+
+</Project>
